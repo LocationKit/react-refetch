@@ -1,4 +1,8 @@
-import 'whatwg-fetch'
+if (process.env.IS_BROWSER) {
+  require('whatwg-fetch')
+} else {
+  require('isomorphic-fetch')
+}
 import React, { Component } from 'react'
 import isPlainObject from '../utils/isPlainObject'
 import deepValue from '../utils/deepValue'

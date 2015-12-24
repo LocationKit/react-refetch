@@ -59,6 +59,7 @@
   },
   "peerDependencies": {
     "whatwg-fetch": "^0.10.1",
+    "isomorphic-fetch": "^0.10.1",
     "react": "^0.14.0"
   }
 }
